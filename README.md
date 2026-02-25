@@ -1,15 +1,13 @@
 # WebTech-Detector
-================================================================================
                         WEB TECH DETECTOR
               A Cybersecurity Technology Fingerprinting Tool
-================================================================================
 
   Scan any website to discover its technology stack and security weaknesses.
   Get risk scores, actionable recommendations, and downloadable PDF reports.
 
-================================================================================
+
 TABLE OF CONTENTS
-================================================================================
+
 
   1. What Is This?
   2. Features
@@ -26,9 +24,7 @@ TABLE OF CONTENTS
  13. Troubleshooting
  14. Author
 
-================================================================================
 1. WHAT IS THIS?
-================================================================================
 
 Web Tech Detector is a self-hosted web application built with Python (Flask)
 on the backend and plain HTML/CSS/JavaScript on the frontend.
@@ -48,9 +44,7 @@ It is designed for developers auditing their own projects, students learning
 about web security, and anyone who wants a quick overview of a site's security
 posture before working with it.
 
-================================================================================
 2. FEATURES
-================================================================================
 
   [+] Technology fingerprinting across 6 categories (32 technologies total)
   [+] SSL/TLS certificate validation and expiry check
@@ -65,9 +59,7 @@ posture before working with it.
   [+] SSRF protection (cannot scan localhost or private IP ranges)
   [+] Fully self-hosted, no data sent to any third-party service
 
-================================================================================
 3. TECHNOLOGIES DETECTED
-================================================================================
 
   CMS (Content Management Systems)
   ---------------------------------
@@ -101,9 +93,7 @@ posture before working with it.
     - Cookie names
     - Script and stylesheet URLs
 
-================================================================================
 4. SECURITY CHECKS
-================================================================================
 
   Security Headers Audited
   ------------------------
@@ -163,9 +153,7 @@ posture before working with it.
     High     - Significant vulnerabilities found
     Critical - Severe security problems that need immediate attention
 
-================================================================================
 5. PROJECT STRUCTURE
-================================================================================
 
   web-tech-detector/
   |
@@ -202,9 +190,7 @@ posture before working with it.
   +-- README.md                   Markdown documentation
   +-- README.txt                  This file
 
-================================================================================
 6. REQUIREMENTS
-================================================================================
 
   System Requirements
   -------------------
@@ -228,9 +214,7 @@ posture before working with it.
   lxml             any        HTML parser engine for BeautifulSoup
   reportlab        4.0+       Generates downloadable PDF reports
 
-================================================================================
 7. INSTALLATION & SETUP
-================================================================================
 
   OPTION A: Simple Install (Recommended for beginners)
   -----------------------------------------------------
@@ -283,9 +267,7 @@ posture before working with it.
              deactivate
 
 
-================================================================================
 8. HOW TO RUN
-================================================================================
 
   Step 1 - Make sure you have completed the installation steps above.
 
@@ -315,9 +297,7 @@ posture before working with it.
   NOTE: Leave the terminal window open while using the app. Closing it
   will shut down the server.
 
-================================================================================
 9. HOW TO USE
-================================================================================
 
   Running a Scan
   --------------
@@ -358,9 +338,7 @@ posture before working with it.
   -------------------
   Click the "NEW SCAN" button to clear the results and scan a different URL.
 
-================================================================================
 10. API REFERENCE
-================================================================================
 
   The backend runs as a REST API on port 5000. You can call these endpoints
   directly using curl, Postman, or any HTTP client.
@@ -437,9 +415,7 @@ posture before working with it.
   Example:
     curl -X DELETE http://localhost:5000/report/1/delete
 
-================================================================================
 11. RUNNING TESTS
-================================================================================
 
   The project includes unit tests for the URL validator and security
   analysis modules.
@@ -458,9 +434,7 @@ posture before working with it.
 
     pip install pytest
 
-================================================================================
 12. RESPONSIBLE USE WARNING
-================================================================================
 
   !! IMPORTANT - PLEASE READ !!
 
@@ -547,9 +521,7 @@ posture before working with it.
             - Check there are no errors in the browser console
               (press F12 and click the Console tab)
 
-================================================================================
 14. AUTHOR
-================================================================================
 
   Web Tech Detector
   Version: 1.0
@@ -565,6 +537,4 @@ posture before working with it.
 
   Feel free to fork, modify, and build upon this project.
 
-================================================================================
                             END OF README
-================================================================================
